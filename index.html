@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Computational Ontology — The ontological systematization of social, real and ideal objects</title>
+<meta name="description" content="Computational Ontology is a research program for the ontological systematization of social, real and ideal objects. Systems: SOCE and EMERGENZA. Platform: ConstitutionsPlus. Fellowship: TRACE (MSCA-PF 2026).">
+<link rel="canonical" href="https://computational-ontology.com/">
+<meta property="og:title" content="Computational Ontology">
+<meta property="og:description" content="The ontological systematization of social, real and ideal objects.">
+<meta property="og:url" content="https://computational-ontology.com/">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ResearchProject",
+  "name": "Computational Ontology",
+  "slogan": "The ontological systematization of social, real and ideal objects",
+  "url": "https://computational-ontology.com/",
+  "parentOrganization": {
+    "@type": "CollegeOrUniversity",
+    "name": "LabOnt — Centre for Ontology, Università degli Studi di Torino"
+  },
+  "member": {
+    "@type": "Person",
+    "name": "Luis Bourguet",
+    "identifier": "https://orcid.org/0000-0002-4673-4486"
+  },
+  "sameAs": [
+    "https://github.com/computational-ontology",
+    "https://zenodo.org/communities/computational-ontology",
+    "https://osf.io/5mwys"
+  ]
+}
+</script>
+<style>
+  :root{
+    --ink:#1c2130;
+    --ink-soft:#4a5164;
+    --paper:#fbfaf7;
+    --card:#ffffff;
+    --line:#e3e0d8;
+    --accent:#7a2e2e;
+    --accent-soft:#f4e9e6;
+    --mono:"SF Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ink:#e8e6e1;
+      --ink-soft:#a9adb8;
+      --paper:#15181f;
+      --card:#1d212b;
+      --line:#323848;
+      --accent:#d08770;
+      --accent-soft:#2a2430;
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font:400 1.05rem/1.65 Georgia, "Times New Roman", serif;
+  }
+  header, main, footer{max-width:44rem; margin:0 auto; padding:0 1.4rem}
+  header{padding-top:4.5rem; padding-bottom:2.6rem}
+  .kicker{
+    font:600 .78rem/1 var(--mono);
+    letter-spacing:.18em; text-transform:uppercase;
+    color:var(--accent); margin:0 0 1rem;
+  }
+  h1{
+    font-size:2.5rem; line-height:1.12; margin:0 0 .8rem;
+    font-weight:400; letter-spacing:-.01em;
+  }
+  .tagline{
+    font-size:1.22rem; font-style:italic; color:var(--ink-soft);
+    margin:0 0 .7rem;
+  }
+  .slogan{
+    font-size:.98rem; color:var(--ink-soft); margin:0 0 1.4rem; max-width:38rem;
+  }
+  .affil{
+    font:400 .85rem/1.5 var(--mono);
+    color:var(--ink-soft); margin:0;
+  }
+  h2{
+    font-size:.82rem; font-family:var(--mono); font-weight:600;
+    letter-spacing:.16em; text-transform:uppercase; color:var(--accent);
+    margin:3rem 0 1rem; padding-top:1.6rem; border-top:1px solid var(--line);
+  }
+  p{margin:0 0 1rem}
+  a{color:var(--accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--accent) 35%, transparent)}
+  a:hover{border-bottom-color:var(--accent)}
+  .rule-box{
+    background:var(--accent-soft);
+    border-left:3px solid var(--accent);
+    padding:1.15rem 1.3rem; margin:1.6rem 0;
+    border-radius:0 6px 6px 0;
+  }
+  .rule-box .rb-title{
+    font:600 .78rem/1 var(--mono); letter-spacing:.14em;
+    text-transform:uppercase; color:var(--accent); margin:0 0 .6rem;
+  }
+  .rule-box p{margin:0; font-size:1rem}
+  .rule-box strong{font-weight:700}
+  ul.pubs{list-style:none; margin:0; padding:0}
+  ul.pubs li{
+    background:var(--card); border:1px solid var(--line); border-radius:8px;
+    padding:1.05rem 1.2rem; margin:0 0 .9rem;
+  }
+  .pub-title{font-weight:700; margin:0 0 .3rem; font-size:1.02rem; line-height:1.45}
+  .pub-meta{font:400 .8rem/1.6 var(--mono); color:var(--ink-soft); margin:0 0 .35rem}
+  .pub-meta a{font-family:var(--mono)}
+  .status{
+    display:inline-block; font:600 .7rem/1 var(--mono); letter-spacing:.06em;
+    padding:.28em .6em; border-radius:99px; border:1px solid var(--line);
+    color:var(--ink-soft); background:var(--paper); margin-right:.4em;
+  }
+  .status.pub{color:#2c6e49; border-color:#2c6e4966}
+  .status.rev{color:#8a6d1f; border-color:#8a6d1f66}
+  .pub-note{font-size:.9rem; color:var(--ink-soft); margin:.45rem 0 0}
+  figure.eco{margin:1.8rem 0 0; padding:0}
+  figure.eco img{width:100%; height:auto; display:block; border-radius:8px; border:1px solid var(--line)}
+  figure.eco figcaption{
+    font:400 .74rem/1.6 var(--mono); color:var(--ink-soft);
+    margin-top:.5rem; text-align:right;
+  }
+  .wb{
+    border:1px solid var(--line); border-radius:8px;
+    padding:.95rem 1.3rem; margin:0 0 1rem; background:var(--card);
+  }
+  .wb .wb-title{
+    font:600 .72rem/1 var(--mono); letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-soft); margin:0 0 .5rem;
+  }
+  .wb p{margin:0; font-size:.92rem; color:var(--ink-soft)}
+  .road-intro{font-size:.95rem; color:var(--ink-soft)}
+  .road-intro strong{color:var(--ink); font-weight:600}
+  .road-wrap{overflow-x:auto; margin:1.2rem 0 .4rem}
+  table.road{width:100%; border-collapse:collapse; background:var(--card);
+    border:1px solid var(--line); border-radius:8px; overflow:hidden; font-size:.88rem}
+  table.road th{
+    font:600 .68rem/1.3 var(--mono); letter-spacing:.1em; text-transform:uppercase;
+    color:var(--ink-soft); text-align:left; padding:.65rem .8rem;
+    border-bottom:1px solid var(--line); background:var(--paper);
+  }
+  table.road td{padding:.6rem .8rem; border-bottom:1px solid var(--line); vertical-align:top}
+  table.road tr:last-child td{border-bottom:none}
+  table.road td.c{text-align:center; font-family:var(--mono); width:3.2rem}
+  table.road td.y{color:#2c6e49; font-weight:700}
+  table.road td.n{color:var(--ink-soft)}
+  .rs{font:600 .7rem/1.4 var(--mono); letter-spacing:.03em; white-space:nowrap}
+  .rs.ok{color:#2c6e49}
+  .rs.mid{color:#8a6d1f}
+  .rs.dr{color:var(--ink-soft)}
+  .mut{color:var(--ink-soft); font-size:.8rem}
+  .road-legend{font:400 .74rem/1.6 var(--mono); color:var(--ink-soft)}
+  .btn-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(15rem,1fr)); gap:.8rem; margin:1.2rem 0 0}
+  a.btn{
+    display:block; background:var(--card); border:1px solid var(--line); border-radius:8px;
+    padding:.9rem 1.1rem; text-decoration:none; color:var(--ink);
+    transition:border-color .15s, transform .15s;
+  }
+  a.btn:hover{border-color:var(--accent); transform:translateY(-1px)}
+  a.btn .bt{display:block; font-weight:700; font-size:.98rem; margin-bottom:.2rem}
+  a.btn .bs{display:block; font:400 .74rem/1.5 var(--mono); color:var(--ink-soft)}
+  a.btn .bs::before{content:"→ "; color:var(--accent)}
+  footer{
+    margin-top:3.5rem; padding-top:1.6rem; padding-bottom:3.5rem;
+    border-top:1px solid var(--line);
+    font:400 .8rem/1.8 var(--mono); color:var(--ink-soft);
+  }
+  footer a{color:var(--ink-soft)}
+  @media (max-width:600px){
+    h1{font-size:2rem}
+    header{padding-top:3rem}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="kicker">Research program</p>
+  <h1>Computational Ontology</h1>
+  <p class="tagline">The ontological systematization of social, real and ideal objects.</p>
+  <p class="slogan">Computational power for complex questions that outgrow any single
+    discipline — mapping reality from an ontological standpoint, with no energy wasted.</p>
+  <p class="affil">LabOnt — Centre for Ontology · Università degli Studi di Torino</p>
+</header>
+
+<main>
+
+  <h2 id="program">The program</h2>
+  <p>
+    Computational Ontology builds formal, testable architectures for the ontological
+    systematization of social, real and ideal objects. The program develops two
+    signature-based diagnostic systems — <strong>SOCE</strong>, the Social-Ontological
+    Cycle of Exclusion, a five-node architecture that reads how contemporary democracies
+    naturalise the exclusion of the Other, and <strong>EMERGENZA</strong>, its companion
+    system on constitutional endurance under emergency — whose structural signatures
+    converge in <strong>ConstitutionsPlus</strong>, the program's public research
+    platform. The confirmatory phase of the program is carried by
+    <strong>TRACE</strong>, a Marie Skłodowska-Curie Postdoctoral Fellowship proposal
+    (HORIZON-MSCA-2026-PF), currently in preparation.
+  </p>
+
+  <figure class="eco">
+    <img src="assets/ecosystem.jpg" width="1600" height="893"
+         alt="Wireframe polyhedron carrying institutional symbols, fed by two networks of luminous nodes, with stratified data planes above — an illustration of the Computational Ontology ecosystem"
+         loading="lazy">
+    <figcaption>The Computational Ontology ecosystem — AI-generated illustration.</figcaption>
+  </figure>
+
+  <div class="rule-box" id="two-tier">
+    <p class="rb-title">The two-tier rule</p>
+    <p>
+      <strong>Exploratory use is open.</strong> Anyone may apply the published codebook
+      and rubrics to read cases, teach, or probe the model.
+      <strong>Canonical diagnosis is not:</strong> a structural signature counts as
+      canonical only when produced by <strong>two trained human coders under the
+      δ-protocol</strong>. AI-assisted extraction may propose values; only human coders
+      validate them.
+    </p>
+  </div>
+
+  <div class="wb">
+    <p class="wb-title">White-box practice</p>
+    <p>
+      In line with Horizon Europe's trustworthy-AI requirements (transparency and
+      explicability) and the EU AI Act: model-agnostic pipelines, inspectable
+      specialization, documented provenance, and human-validated verdicts.
+      AI proposes; humans decide.
+    </p>
+  </div>
+
+  <h2 id="publications">Research objects &amp; publications</h2>
+  <ul class="pubs">
+    <li>
+      <p class="pub-title">SOCE Codebook v0.1 and Corpus Registry</p>
+      <p class="pub-meta">Zenodo · 27 July 2026 · CC BY 4.0 ·
+        <a href="https://doi.org/10.5281/zenodo.21616892">doi:10.5281/zenodo.21616892</a></p>
+      <span class="status pub">PUBLISHED</span>
+      <p class="pub-note">Measurement canon of the SOCE system: codebook, ordinal rubrics,
+        anchor set and corpus case registry (frozen canon v0.1).</p>
+    </li>
+    <li>
+      <p class="pub-title">Confirmatory replication of the SOCE retrodiction battery under frozen canon v0.1</p>
+      <p class="pub-meta">OSF preregistration · sealed 27 July 2026 ·
+        <a href="https://doi.org/10.17605/OSF.IO/5MWYS">doi:10.17605/OSF.IO/5MWYS</a></p>
+      <span class="status pub">PREREGISTERED</span>
+      <p class="pub-note">Public, timestamped preregistration of the retrodiction battery.
+        The confirmatory analysis has not yet been run.</p>
+    </li>
+    <li>
+      <p class="pub-title">The Constitution as a Founding Inscription: What Kind of Social Object a National Constitution Is, and How It Institutionalizes the Human Condition Across the World's Legal Traditions</p>
+      <p class="pub-meta">Preprint · Zenodo · 16 July 2026 · CC BY 4.0 ·
+        <a href="https://doi.org/10.5281/zenodo.21388176">doi:10.5281/zenodo.21388176</a></p>
+      <span class="status rev">UNDER REVIEW</span>
+      <p class="pub-note">Under double-blind peer review; the journal is not named here to
+        protect the integrity of the review process.</p>
+    </li>
+    <li>
+      <p class="pub-title">Contested Liberalisms in Mexico: Popular Liberalism, the Fourth Transformation, and the Struggle over Constitutional Identity</p>
+      <p class="pub-meta">Zenodo deposit · 16 July 2026 · CC BY-NC 4.0 ·
+        <a href="https://doi.org/10.5281/zenodo.21386477">doi:10.5281/zenodo.21386477</a></p>
+      <span class="status pub">ACCEPTED</span>
+      <p class="pub-note">Accepted for publication · in press. Full bibliographic details
+        will be added upon publication.</p>
+    </li>
+  </ul>
+
+  <h2 id="roadmap">Open science roadmap</h2>
+  <p class="road-intro">
+    Every research object in the ecosystem moves through one pipeline:
+    <strong>GitHub works · OSF declares · Zenodo freezes · EOSC preserves · the web
+    communicates.</strong> The table tracks where each work stands. Works under
+    double-blind review are listed without journal names; their preprint deposits wait
+    until the journals' preprint policies are verified.
+  </p>
+  <div class="road-wrap">
+    <table class="road">
+      <thead>
+        <tr><th>Work</th><th>Editorial status</th><th>Zenodo</th><th>GitHub</th><th>OSF</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Contested Liberalisms in Mexico</td>
+          <td><span class="rs ok">Accepted · in press</span></td>
+          <td class="c y">✓</td><td class="c y">✓</td><td class="c n">—</td>
+        </tr>
+        <tr>
+          <td>The Constitution as a Founding Inscription</td>
+          <td><span class="rs mid">Under double-blind review</span></td>
+          <td class="c y">✓</td><td class="c y">✓</td><td class="c n">—</td>
+        </tr>
+        <tr>
+          <td>Architetture ideologiche</td>
+          <td><span class="rs mid">Under double-blind review</span></td>
+          <td class="c n">—</td><td class="c n">—</td><td class="c n">—</td>
+        </tr>
+        <tr>
+          <td>Ideological Signatures <span class="mut">(companion paper)</span></td>
+          <td><span class="rs mid">Under double-blind review</span></td>
+          <td class="c n">—</td><td class="c n">—</td><td class="c n">—</td>
+        </tr>
+        <tr>
+          <td>Cartography of Nationalism</td>
+          <td><span class="rs mid">Submission in preparation</span></td>
+          <td class="c n">—</td><td class="c n">—</td><td class="c n">—</td>
+        </tr>
+        <tr>
+          <td>When Rights Outrun Reality</td>
+          <td><span class="rs dr">Draft · not yet submitted</span></td>
+          <td class="c n">—</td><td class="c n">—</td><td class="c n">—</td>
+        </tr>
+        <tr>
+          <td>SOCE <span class="mut">(system · frozen canon v0.1)</span></td>
+          <td><span class="rs ok">Codebook published · battery preregistered</span></td>
+          <td class="c y">✓</td><td class="c y">✓</td><td class="c y">✓</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="road-legend">✓ public research object with persistent identifier · — pending.</p>
+
+  <h2 id="infrastructure">Open infrastructure</h2>
+  <div class="btn-grid">
+    <a class="btn" href="https://github.com/computational-ontology">
+      <span class="bt">GitHub</span>
+      <span class="bs">github.com/computational-ontology</span>
+    </a>
+    <a class="btn" href="https://zenodo.org/communities/computational-ontology">
+      <span class="bt">Zenodo</span>
+      <span class="bs">community: computational-ontology</span>
+    </a>
+    <a class="btn" href="https://osf.io/5mwys">
+      <span class="bt">OSF</span>
+      <span class="bs">preregistration · osf.io/5mwys</span>
+    </a>
+    <a class="btn" href="https://orcid.org/0000-0002-4673-4486">
+      <span class="bt">ORCID</span>
+      <span class="bs">0000-0002-4673-4486</span>
+    </a>
+  </div>
+
+  <h2 id="affiliations">Affiliation &amp; collaborations</h2>
+  <div class="btn-grid">
+    <a class="btn" href="https://labont.it/people/luis-bourguet/">
+      <span class="bt">LabOnt — Centre for Ontology</span>
+      <span class="bs">Università degli Studi di Torino · postdoctoral researcher</span>
+    </a>
+    <a class="btn" href="https://csslab.jp/en/members/">
+      <span class="bt">Complex Systems Science Lab</span>
+      <span class="bs">Hiroshima University · visiting researcher</span>
+    </a>
+    <a class="btn" href="https://centri.unibo.it/csal/it/centro">
+      <span class="bt">CSAL — Center for Latin American Studies</span>
+      <span class="bs">Università di Bologna · collaboration</span>
+    </a>
+  </div>
+
+</main>
+
+<footer>
+  <p>Luis Bourguet · LabOnt — Centre for Ontology, Università degli Studi di Torino ·
+     <a href="https://orcid.org/0000-0002-4673-4486">ORCID 0000-0002-4673-4486</a><br>
+     Site content licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> unless stated otherwise · Hosted on GitHub Pages</p>
+</footer>
+
+</body>
+</html>
