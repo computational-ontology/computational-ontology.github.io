@@ -213,6 +213,104 @@
   .wbtag{display:inline-flex;align-items:center;gap:7px;font-weight:600;color:var(--acc-ink);}
   .wbtag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--acc);}
 </style>
+  <!-- ============================================================= -->
+<!-- PASTE INSIDE <head> of index.html (computational-ontology.com) -->
+<!-- Adds: canonical, Twitter card, JSON-LD structured data.        -->
+<!-- (OpenGraph you already have — keep it.)                        -->
+<!-- ============================================================= -->
+
+<link rel="canonical" href="https://computational-ontology.com/">
+<link rel="author" href="https://orcid.org/0000-0002-4673-4486">
+<link rel="sitemap" type="application/xml" href="https://computational-ontology.com/sitemap.xml">
+
+<!-- Twitter card (OpenGraph already present) -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Computational Ontology">
+<meta name="twitter:description" content="Formal, reproducible architectures for the ontological systematization of social, real and ideal objects.">
+
+<!-- Google Scholar / Highwire tags for the featured work (optional; Zenodo already carries these for the full texts) -->
+<meta name="citation_author" content="Bourguet, Luis">
+<meta name="citation_title" content="SOCE Codebook v0.1">
+<meta name="citation_doi" content="10.5281/zenodo.21616892">
+
+<!-- Structured data: Person + WebSite + research outputs (schema.org) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0000-0002-4673-4486",
+      "name": "Luis Bourguet",
+      "url": "https://computational-ontology.com/",
+      "identifier": "https://orcid.org/0000-0002-4673-4486",
+      "sameAs": [
+        "https://orcid.org/0000-0002-4673-4486",
+        "https://github.com/computational-ontology",
+        "https://zenodo.org/communities/computational-ontology"
+      ],
+      "affiliation": {
+        "@type": "Organization",
+        "name": "LabOnt — Centre for Ontology, Università degli Studi di Torino",
+        "url": "https://labont.it/"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://computational-ontology.com/#website",
+      "url": "https://computational-ontology.com/",
+      "name": "Computational Ontology",
+      "description": "Formal, reproducible architectures for the ontological systematization of social, real and ideal objects.",
+      "inLanguage": "en",
+      "author": { "@id": "https://orcid.org/0000-0002-4673-4486" },
+      "publisher": { "@id": "https://orcid.org/0000-0002-4673-4486" }
+    },
+    {
+      "@type": "Collection",
+      "name": "Computational Ontology — Zenodo community",
+      "url": "https://zenodo.org/communities/computational-ontology"
+    },
+    {
+      "@type": "Dataset",
+      "name": "SOCE Codebook v0.1 (measurement canon)",
+      "url": "https://doi.org/10.5281/zenodo.21616892",
+      "identifier": "https://doi.org/10.5281/zenodo.21616892",
+      "creator": { "@id": "https://orcid.org/0000-0002-4673-4486" },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "isAccessibleForFree": true,
+      "keywords": ["democratic exclusion", "social ontology", "constitutional theory", "rule of law", "inequality", "gender equality", "SDG 16", "SDG 10", "SDG 5"],
+      "isPartOf": { "@id": "https://computational-ontology.com/#website" }
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "SOCE — Preregistration (validation battery, sealed pass/fail)",
+      "url": "https://doi.org/10.17605/OSF.IO/5MWYS",
+      "identifier": "https://doi.org/10.17605/OSF.IO/5MWYS",
+      "creator": { "@id": "https://orcid.org/0000-0002-4673-4486" },
+      "isPartOf": { "@id": "https://computational-ontology.com/#website" }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "The Constitution as a Founding Inscription",
+      "url": "https://doi.org/10.5281/zenodo.21386477",
+      "identifier": "https://doi.org/10.5281/zenodo.21386477",
+      "author": { "@id": "https://orcid.org/0000-0002-4673-4486" },
+      "isPartOf": { "@id": "https://computational-ontology.com/#website" }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Contested Liberalisms in Mexico: Popular Liberalism, the Fourth Transformation, and the Struggle over Constitutional Identity",
+      "url": "https://doi.org/10.5281/zenodo.21388176",
+      "identifier": "https://doi.org/10.5281/zenodo.21388176",
+      "isPartOf": { "@id": "https://computational-ontology.com/#website" },
+      "author": { "@id": "https://orcid.org/0000-0002-4673-4486" },
+      "publication": "INGURUAK — Revista Vasca de Sociología y Ciencia Política (ISSN 2444-1317), 2026"
+    }
+  ]
+}
+</script>
+<!-- NOTE: add a "funding"/Grant node here once the MSCA grant is awarded (grant number from the GA);
+     until then, do not assert a funder. The primary funding link is the "Funding" field in each Zenodo deposit. -->
 </head>
 <body>
 
