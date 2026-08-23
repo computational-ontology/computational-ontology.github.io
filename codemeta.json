@@ -1,0 +1,34 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "Computational Ontology — SOCE analysis scaffold & agent wrapper",
+  "description": "White-box, model-agnostic infrastructure for the ontological systematization of social objects: a 113-position vector encoder with missing-value masks, attributed-digraph comparison via a Weisfeiler-Lehman kernel, a delta0-delta4 classifier, and an agent wrapper that turns any AI system into a proposal-only second coder under a two-tier human-validation rule.",
+  "codeRepository": "https://github.com/computational-ontology",
+  "url": "https://computational-ontology.com/",
+  "license": "https://spdx.org/licenses/CC-BY-4.0",
+  "programmingLanguage": "Python",
+  "keywords": [
+    "computational social ontology",
+    "democratic exclusion",
+    "reproducibility",
+    "human-in-the-loop",
+    "SDG 16"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Luis",
+      "familyName": "Bourguet",
+      "@id": "https://orcid.org/0000-0002-4673-4486",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "LabOnt — Centre for Ontology, Università degli Studi di Torino"
+      }
+    }
+  ],
+  "identifier": "https://doi.org/10.5281/zenodo.21616892",
+  "relatedLink": [
+    "https://zenodo.org/communities/computational-ontology",
+    "https://doi.org/10.17605/OSF.IO/5MWYS"
+  ]
+}

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "Computational Ontology — SOCE measurement canon and infrastructure"
+message: "If you use this work, please cite the deposited codebook (DOI below)."
+type: dataset
+authors:
+  - family-names: Bourguet
+    given-names: Luis
+    orcid: "https://orcid.org/0000-0002-4673-4486"
+    affiliation: "LabOnt — Centre for Ontology, Università degli Studi di Torino"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21616892"
+    description: "SOCE Codebook v0.1 (measurement canon)"
+  - type: doi
+    value: "10.17605/OSF.IO/5MWYS"
+    description: "Preregistration (validation battery)"
+repository-code: "https://github.com/computational-ontology"
+url: "https://computational-ontology.com/"
+license: CC-BY-4.0
+keywords:
+  - computational social ontology
+  - democratic exclusion
+  - constitutional theory
+  - reproducibility
+  - SDG 16
+  - SDG 10
+  - SDG 5
