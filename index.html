@@ -72,6 +72,12 @@
   .navlinks a{color:var(--mut);font-weight:500;}
   .navlinks a:hover{color:var(--ink);text-decoration:none;}
   @media(max-width:820px){.navlinks{display:none;}}
+  /* cross-site switch: one project, three sites (Matrix · Project · Platform) */
+  .switch{display:inline-flex;border:1px solid var(--line);border-radius:100px;padding:3px;background:var(--bg2);font-size:12px;font-weight:600;}
+  .switch a{padding:4px 11px;border-radius:100px;color:var(--mut);}
+  .switch a:hover{text-decoration:none;color:var(--ink);}
+  .switch a.on{background:var(--acc);color:#fff;}
+  @media(max-width:520px){.switch a{padding:4px 8px;}}
 
   /* hero */
   .hero{padding:84px 0 64px;background:
@@ -325,6 +331,7 @@
       <a href="#knowledge">Method</a>
       <a href="#open-science">Open science</a>
     </nav>
+    <nav class="switch" aria-label="One project, three sites"><a href="https://ontology360.it/" title="ontology360.it — the matrix">Matrix</a><a class="on" href="#top" title="computational-ontology.com — the project">Project</a><a href="https://constitutionsplus.com/" title="constitutionsplus.com — the platform">Platform</a></nav>
   </div>
 </header>
 
@@ -426,7 +433,7 @@
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow">The apparatus</p>
-      <h2>How the program reads reality</h2>
+      <h2>How the project reads reality</h2>
       <p>Every analysis is routed through three instances of truth — Charles Peirce's triad, read ontologically after Ferraris — and interrogated across the four domains of the social system.</p>
     </div>
 
@@ -462,7 +469,8 @@
         </ul>
       </div>
     </div>
-    <p class="bridge"><b>Technology bridges knowledge to the real</b> — which is why a computational platform is the natural instrument of this program.</p>
+    <p class="bridge"><b>Technology bridges knowledge to the real</b> — which is why a computational platform is the natural instrument of this project.</p>
+    <p class="bridge">The apparatus is developed in full — grammar, operators, book and open data — at <a href="https://ontology360.it/" title="Ontology 360 — the matrix">ontology360.it</a>, the matrix of this project.</p>
 
     <div class="sec-head" style="margin-top:48px;margin-bottom:14px">
       <h2 style="font-size:20px">The driving question — the four domains</h2>
@@ -616,6 +624,7 @@
       <div class="pub road-green"><span class="badge">Under review</span><span><span class="t">Architetture ideologiche</span><br><span class="doi">double-blind peer review · no DOI yet</span></span><span class="roadtag rt-green">Green road</span></div>
       <div class="pub road-green"><span class="badge">Under review</span><span><span class="t">Ideological Signatures (companion paper)</span><br><span class="doi">double-blind peer review · no DOI yet</span></span><span class="roadtag rt-green">Green road</span></div>
       <div class="pub road-green"><span class="badge">In preparation</span><span><span class="t">Cartography of Nationalism</span><br><span class="doi">submission in preparation · no DOI yet</span></span><span class="roadtag rt-green">Green road</span></div>
+      <a class="pub road-green" href="https://ontology360.it/book.html" target="_blank" rel="noopener"><span class="badge">Draft</span><span><span class="t">La Constitución en la era digital (book)</span><br><span class="doi">manuscript in draft, intended for Herder · Ópera Académica — not yet submitted · companion data at data.ontology360.it</span></span><span class="roadtag rt-green">Green road</span></a>
       <div class="pub road-green"><span class="badge">Draft</span><span><span class="t">When Rights Outrun Reality</span><br><span class="doi">draft — not yet submitted · no DOI yet</span></span><span class="roadtag rt-green">Green road</span></div>
     </div>
 
@@ -626,6 +635,8 @@
       <a class="chip" href="https://github.com/computational-ontology" target="_blank" rel="noopener">GitHub <small>· code</small></a>
       <a class="chip" href="https://zenodo.org/communities/computational-ontology" target="_blank" rel="noopener">Zenodo <small>· deposits</small></a>
       <a class="chip" href="https://osf.io/5mwys/" target="_blank" rel="noopener">OSF <small>· preregistration</small></a>
+      <a class="chip" href="https://ontology360.it/" target="_blank" rel="noopener">Ontology 360 <small>· the matrix</small></a>
+      <a class="chip" href="https://data.ontology360.it/" target="_blank" rel="noopener">Companion <small>· open data</small></a>
       <a class="chip" href="https://orcid.org/0000-0002-4673-4486" target="_blank" rel="noopener">ORCID <small>· 0000-0002-4673-4486</small></a>
     </div>
   </div>
