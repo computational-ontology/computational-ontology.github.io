@@ -10,6 +10,13 @@
 <meta property="og:description" content="The ontological systematization of social, real and ideal objects.">
 <meta property="og:url" content="https://computational-ontology.com/">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://computational-ontology.com/brand/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://computational-ontology.com/brand/og-image.png">
+<link rel="icon" type="image/png" sizes="32x32" href="brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="brand/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="brand/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -330,6 +337,9 @@
   @media(max-width:700px){.route-svg{display:none;}.route-list{display:block;}.ringpeak svg text.lbl{display:none;}}
 
   /* .com dose */
+  .brand img{width:28px;height:28px;display:block;}
+  .brand{gap:11px;}
+  .sib{display:inline-block;width:22px;height:22px;vertical-align:-6px;margin-right:6px;}
   :root{--datum:#0f766e; --interp:#b7791f; --norm:#7c3aed;}
   @media (prefers-color-scheme: dark){:root{--interp:#fbbf24; --norm:#c4b5fd;}}
   .linkpos{display:inline-flex;align-items:center;gap:4px;vertical-align:middle;}
@@ -449,7 +459,7 @@
 
 <header class="nav">
   <div class="wrap row">
-    <a class="brand" href="#top"><span class="dot">CO</span> Computational Ontology</a>
+    <a class="brand" href="#top"><picture><source srcset="brand/computational-ontology-mark-dark.svg" media="(prefers-color-scheme: dark)"><img src="brand/computational-ontology-mark-color.svg" alt="" width="28" height="28"></picture><span>Computational Ontology</span></a>
     <nav class="navlinks">
       <a href="#project">Project</a>
       <a href="#architecture">Architecture</a>
@@ -799,7 +809,8 @@
       <a class="chip" href="https://github.com/computational-ontology" target="_blank" rel="noopener">GitHub <small>· code</small></a>
       <a class="chip" href="https://zenodo.org/communities/computational-ontology" target="_blank" rel="noopener">Zenodo <small>· deposits</small></a>
       <a class="chip" href="https://osf.io/5mwys/" target="_blank" rel="noopener">OSF <small>· preregistration</small></a>
-      <a class="chip" href="https://ontology360.it/" target="_blank" rel="noopener">Ontology 360 <small>· the matrix</small></a>
+      <a class="chip" href="https://ontology360.it/" target="_blank" rel="noopener"><picture><source srcset="brand/ontology360-mark-dark.svg" media="(prefers-color-scheme: dark)"><img class="sib" src="brand/ontology360-mark-color.svg" alt="" width="22" height="22"></picture>Ontology 360 <small>· the matrix</small></a>
+      <a class="chip" href="https://constitutionsplus.com/" target="_blank" rel="noopener"><picture><source srcset="brand/constitutionsplus-mark-dark.svg" media="(prefers-color-scheme: dark)"><img class="sib" src="brand/constitutionsplus-mark-color.svg" alt="" width="22" height="22"></picture>ConstitutionsPlus <small>· the platform</small></a>
       <a class="chip" href="https://data.ontology360.it/" target="_blank" rel="noopener">Companion <small>· open data</small></a>
       <a class="chip" href="https://orcid.org/0000-0002-4673-4486" target="_blank" rel="noopener">ORCID <small>· 0000-0002-4673-4486</small></a>
     </div>
@@ -827,7 +838,8 @@
     <span>© 2026 Luis Bourguet · <a href="https://orcid.org/0000-0002-4673-4486" target="_blank" rel="noopener">ORCID 0000-0002-4673-4486</a> · Content licensed <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · Hosted on GitHub Pages</span>
     <span class="wbtag">White-box practice — no trackers, no third-party code</span>
   </div>
-  <div class="wrap" style="margin-top:10px;"><span class="stamp">Updated 3 September 2026 · build 572f80c · <a href="https://github.com/computational-ontology/computational-ontology.github.io/commits/main" target="_blank" rel="noopener">history</a></span></div>
+  <div class="wrap" style="margin-top:12px;font-size:13.5px;">Part of the Computational Ontology ecosystem · Hub: <a href="https://luisbourguet.com/">Luis Bourguet</a> (luisbourguet.com)</div>
+  <div class="wrap" style="margin-top:6px;"><span class="stamp">Updated 3 September 2026 · build b9de140 · <a href="https://github.com/computational-ontology/computational-ontology.github.io/commits/main" target="_blank" rel="noopener">history</a></span></div>
 </footer>
 
 </body>
