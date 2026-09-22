@@ -218,7 +218,14 @@
   .rt-diamond{color:#0b93b0;border-color:#22d3ee;background:rgba(34,211,238,.10);}
   .rt-gold{color:#b7791f;border-color:#f59e0b;background:rgba(245,158,11,.13);}
   .rt-green{color:#178a44;border-color:#22c55e;background:rgba(34,197,94,.13);}
-  @media(prefers-color-scheme:dark){.rt-diamond{color:#67e8f9;}.rt-gold{color:#fbbf24;}.rt-green{color:#6ee7a8;}}
+  .projtag{flex:none;align-self:center;display:inline-flex;align-items:center;gap:6px;white-space:nowrap;
+    font-size:11px;font-weight:700;letter-spacing:.03em;padding:3px 11px;border-radius:100px;border:1px solid;margin-top:2px;}
+  .projtag::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor;flex:none;}
+  .pj-soce{color:#0b5a54;border-color:#0d9488;background:rgba(13,148,136,.10);}
+  .pj-app{color:#6d28d9;border-color:#8b5cf6;background:rgba(139,92,246,.10);}
+  .pj-alone{color:#475569;border-color:#94a3b8;background:rgba(148,163,184,.14);}
+  .pj-book{color:#9d174d;border-color:#ec4899;background:rgba(236,72,153,.10);}
+  @media(prefers-color-scheme:dark){.rt-diamond{color:#67e8f9;}.rt-gold{color:#fbbf24;}.rt-green{color:#6ee7a8;}.pj-soce{color:#5eead4;}.pj-app{color:#c4b5fd;}.pj-alone{color:#cbd5e1;}.pj-book{color:#f9a8d4;}}
 
   /* footer */
   footer{padding:40px 0 56px;color:var(--mut);font-size:13.5px;}
@@ -765,60 +772,59 @@
         <div class="on">On this road: the Founding Inscription preprint, the preregistration, and in-process preprints.</div>
       </div>
     </div>
-    <p class="roads-cap">Every research object below travels one of these three open-access roads.</p>
+    <p class="roads-cap">Every research object below travels one of these three open-access roads. The left-hand tag names the project each object belongs to: <strong>SOCE</strong> — the exclusion-cycle system; <strong>Ontology360</strong> — the shared grammar; standalone work; or the book in progress.</p>
 
     <div class="pubs">
       <a class="pub road-diamond" href="https://doi.org/10.5281/zenodo.21616892" target="_blank" rel="noopener">
         <span class="badge">Codebook</span>
+        <span class="projtag pj-soce">SOCE · MSCA core</span>
         <span><span class="t">SOCE Codebook v0.1</span><br><span class="doi">Zenodo · doi:10.5281/zenodo.21616892</span></span>
         <span class="roadtag rt-diamond">Diamond road</span>
       </a>
       <a class="pub road-green" href="https://doi.org/10.17605/OSF.IO/5MWYS" target="_blank" rel="noopener">
         <span class="badge">Preregistration</span>
+        <span class="projtag pj-soce">SOCE · MSCA core</span>
         <span><span class="t">Confirmatory replication preregistration</span><br><span class="doi">OSF · doi:10.17605/OSF.IO/5MWYS</span></span>
-        <span class="roadtag rt-green">Green road</span>
-      </a>
-      <a class="pub road-green" href="https://doi.org/10.5281/zenodo.21386477" target="_blank" rel="noopener">
-        <span class="badge">Published</span>
-        <span><span class="t">The Constitution as a Founding Inscription</span><br><span class="doi">Revista General de Derecho Público Comparado (IUSTEL) · preprint deposited: doi:10.5281/zenodo.21386477</span></span>
         <span class="roadtag rt-green">Green road</span>
       </a>
       <a class="pub road-diamond" href="https://doi.org/10.5281/zenodo.21388176" target="_blank" rel="noopener">
         <span class="badge">Published</span>
+        <span class="projtag pj-soce">SOCE · application</span>
         <span><span class="t">Contested Liberalisms in Mexico</span><br><span class="doi">INGURUAK · doi:10.5281/zenodo.21388176</span></span>
-        <span class="roadtag rt-diamond">Diamond road</span>
-      </a>
-      <a class="pub road-diamond" href="https://doi.org/10.5281/zenodo.22748194" target="_blank" rel="noopener">
-        <span class="badge">Software</span>
-        <span><span class="t">New-Realism Analyzer</span><br><span class="doi">Zenodo · Apache-2.0 · doi:10.5281/zenodo.22748194</span></span>
         <span class="roadtag rt-diamond">Diamond road</span>
       </a>
       <a class="pub road-diamond" href="https://doi.org/10.5281/zenodo.22022046" target="_blank" rel="noopener">
         <span class="badge">Dataset</span>
+        <span class="projtag pj-soce">SOCE</span>
         <span><span class="t">Nationalism Cartography</span><br><span class="doi">Zenodo · CC BY 4.0 · doi:10.5281/zenodo.22022046</span></span>
+        <span class="roadtag rt-diamond">Diamond road</span>
+      </a>
+      <a class="pub road-green" href="https://doi.org/10.5281/zenodo.21386477" target="_blank" rel="noopener">
+        <span class="badge">Published</span>
+        <span class="projtag pj-app">Ontology360 · SOCE antecedent</span>
+        <span><span class="t">The Constitution as a Founding Inscription</span><br><span class="doi">Revista General de Derecho Público Comparado (IUSTEL) · preprint deposited: doi:10.5281/zenodo.21386477</span></span>
+        <span class="roadtag rt-green">Green road</span>
+      </a>
+      <a class="pub road-diamond" href="https://doi.org/10.5281/zenodo.22748194" target="_blank" rel="noopener">
+        <span class="badge">Software</span>
+        <span class="projtag pj-app">Ontology360 · instrument</span>
+        <span><span class="t">New-Realism Analyzer</span><br><span class="doi">Zenodo · Apache-2.0 · doi:10.5281/zenodo.22748194</span></span>
         <span class="roadtag rt-diamond">Diamond road</span>
       </a>
       <a class="pub road-diamond" href="https://doi.org/10.5281/zenodo.22867233" target="_blank" rel="noopener">
         <span class="badge">Dataset</span>
+        <span class="projtag pj-app">Ontology360</span>
         <span><span class="t">Comparative materials — Founding Inscription</span><br><span class="doi">Zenodo · CC BY 4.0 · doi:10.5281/zenodo.22867233</span></span>
         <span class="roadtag rt-diamond">Diamond road</span>
       </a>
       <a class="pub road-diamond" href="https://doi.org/10.22201/iij.24487880e.2025.47.18377" target="_blank" rel="noopener">
         <span class="badge">Published</span>
+        <span class="projtag pj-alone">Standalone</span>
         <span><span class="t">Breve historia de caso de un juicio de amparo indirecto</span><br><span class="doi">Revista Mexicana de Historia del Derecho (IIJ-UNAM) · CC BY-NC 4.0 · doi:10.22201/iij.24487880e.2025.47.18377</span></span>
         <span class="roadtag rt-diamond">Diamond road</span>
       </a>
-    </div>
-
-    <div class="sec-head" style="margin:40px 0 14px">
-      <h2 style="font-size:19px">In process</h2>
-      <p>Works under review or in preparation. Titles are listed; venues are withheld while in double-blind review.</p>
-    </div>
-    <div class="pubs">
-      <div class="pub road-green"><span class="badge">Under review</span><span><span class="t">Architetture ideologiche</span><br><span class="doi">double-blind peer review · no DOI yet</span></span><span class="roadtag rt-green">Green road</span></div>
-      <div class="pub road-green"><span class="badge">Under review</span><span><span class="t">Ideological Signatures (companion paper)</span><br><span class="doi">double-blind peer review · no DOI yet</span></span><span class="roadtag rt-green">Green road</span></div>
-      <div class="pub road-green"><span class="badge">In preparation</span><span><span class="t">Cartography of Nationalism</span><br><span class="doi">submission in preparation · no DOI yet</span></span><span class="roadtag rt-green">Green road</span></div>
-      <a class="pub road-green" href="https://ontology360.it/book.html" target="_blank" rel="noopener"><span class="badge">Draft</span><span><span class="t">La Constitución en la era digital (book)</span><br><span class="doi">manuscript in draft, intended for Herder · Ópera Académica — not yet submitted · companion data at data.ontology360.it</span></span><span class="roadtag rt-green">Green road</span></a>
+      <a class="pub road-green" href="https://ontology360.it/book.html" target="_blank" rel="noopener"><span class="badge">Draft</span>
+        <span class="projtag pj-book">Book</span><span><span class="t">La Constitución en la era digital (book)</span><br><span class="doi">manuscript in draft, intended for Herder · Ópera Académica — not yet submitted · companion data at data.ontology360.it</span></span><span class="roadtag rt-green">Green road</span></a>
       <div class="pub road-green"><span class="badge">Draft</span><span><span class="t">When Rights Outrun Reality</span><br><span class="doi">draft — not yet submitted · no DOI yet</span></span><span class="roadtag rt-green">Green road</span></div>
     </div>
 
