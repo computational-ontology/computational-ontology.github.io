@@ -226,6 +226,15 @@
   .pj-app{color:#6d28d9;border-color:#8b5cf6;background:rgba(139,92,246,.10);}
   .pj-alone{color:#475569;border-color:#94a3b8;background:rgba(148,163,184,.14);}
   .pj-book{color:#9d174d;border-color:#ec4899;background:rgba(236,72,153,.10);}
+  .pubgroup{display:flex;align-items:center;gap:9px;font-size:11.5px;font-weight:800;letter-spacing:.09em;
+    text-transform:uppercase;color:var(--mut);margin-top:16px;}
+  .pubgroup:first-child{margin-top:0;}
+  .pubgroup::after{content:"";flex:1;height:1px;background:var(--line);}
+  .pubgroup .dot{width:8px;height:8px;border-radius:50%;flex:none;}
+  .pg-soce .dot{background:#0d9488;}
+  .pg-app .dot{background:#8b5cf6;}
+  .pg-alone .dot{background:#94a3b8;}
+  .pg-book .dot{background:#ec4899;}
   @media(prefers-color-scheme:dark){.rt-diamond{color:#67e8f9;}.rt-gold{color:#fbbf24;}.rt-green{color:#6ee7a8;}.pj-soce{color:#5eead4;}.pj-app{color:#c4b5fd;}.pj-alone{color:#cbd5e1;}.pj-book{color:#f9a8d4;}}
 
   /* footer */
@@ -777,6 +786,7 @@
     <p class="roads-cap">Every research object below travels one of these three open-access roads. The left-hand tag names the project each object belongs to: <strong>SOCE</strong> — the exclusion-cycle system; <strong>Ontology360</strong> — the shared grammar; standalone work; or the book in progress.</p>
 
     <div class="pubs">
+      <div class="pubgroup pg-soce"><span class="dot"></span>SOCE — the exclusion-cycle system</div>
       <a class="pub road-diamond" href="https://doi.org/10.5281/zenodo.21616892" target="_blank" rel="noopener">
         <span class="badge">Codebook</span>
         <span class="projtag pj-soce">SOCE · MSCA core</span>
@@ -801,6 +811,7 @@
         <span><span class="t">Nationalism Cartography</span><br><span class="doi">Zenodo · CC BY 4.0 · doi:10.5281/zenodo.22022046</span></span>
         <span class="roadtag rt-diamond">Diamond road</span>
       </a>
+      <div class="pubgroup pg-app"><span class="dot"></span>Ontology360 — the shared grammar</div>
       <a class="pub road-green" href="https://doi.org/10.5281/zenodo.21386477" target="_blank" rel="noopener">
         <span class="badge">Published</span>
         <span class="projtag pj-app">Ontology360 · SOCE antecedent</span>
@@ -819,15 +830,17 @@
         <span><span class="t">Comparative materials — Founding Inscription</span><br><span class="doi">Zenodo · CC BY 4.0 · doi:10.5281/zenodo.22867233</span></span>
         <span class="roadtag rt-diamond">Diamond road</span>
       </a>
+      <div class="pubgroup pg-alone"><span class="dot"></span>Standalone</div>
       <a class="pub road-diamond" href="https://doi.org/10.22201/iij.24487880e.2025.47.18377" target="_blank" rel="noopener">
         <span class="badge">Published</span>
         <span class="projtag pj-alone">Standalone</span>
         <span><span class="t">Breve historia de caso de un juicio de amparo indirecto</span><br><span class="doi">Revista Mexicana de Historia del Derecho (IIJ-UNAM) · CC BY-NC 4.0 · doi:10.22201/iij.24487880e.2025.47.18377</span></span>
         <span class="roadtag rt-diamond">Diamond road</span>
       </a>
+      <div class="pub road-green"><span class="badge">Draft</span><span class="projtag pj-alone">Standalone</span><span><span class="t">When Rights Outrun Reality</span><br><span class="doi">draft — not yet submitted · no DOI yet</span></span><span class="roadtag rt-green">Green road</span></div>
+      <div class="pubgroup pg-book"><span class="dot"></span>Book in progress</div>
       <a class="pub road-green" href="https://ontology360.it/book.html" target="_blank" rel="noopener"><span class="badge">Draft</span>
         <span class="projtag pj-book">Book</span><span><span class="t">La Constitución en la era digital (book)</span><br><span class="doi">manuscript in draft, intended for Herder · Ópera Académica — not yet submitted · companion data at data.ontology360.it</span></span><span class="roadtag rt-green">Green road</span></a>
-      <div class="pub road-green"><span class="badge">Draft</span><span class="projtag pj-alone">Standalone</span><span><span class="t">When Rights Outrun Reality</span><br><span class="doi">draft — not yet submitted · no DOI yet</span></span><span class="roadtag rt-green">Green road</span></div>
     </div>
 
     <div class="sec-head" style="margin:44px 0 16px">
