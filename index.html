@@ -167,7 +167,8 @@
     background:var(--panel);padding:16px 18px;transition:.15s;}
   .pub:hover{border-color:var(--acc);}
   .pub .badge{flex:none;font-size:11px;font-weight:700;letter-spacing:.03em;padding:3px 9px;border-radius:100px;
-    background:var(--acc-soft);color:var(--acc-ink);border:1px solid var(--acc);margin-top:2px;}
+    background:var(--acc-soft);color:var(--acc-ink);border:1px solid var(--acc);margin-top:2px;
+    min-width:118px;display:inline-flex;justify-content:center;align-items:center;}
   .pub .t{font-weight:600;font-size:15px;color:var(--ink);}
   .pub .doi{font-size:12.5px;color:var(--mut);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;}
 
@@ -218,7 +219,7 @@
   .rt-diamond{color:#0b93b0;border-color:#22d3ee;background:rgba(34,211,238,.10);}
   .rt-gold{color:#b7791f;border-color:#f59e0b;background:rgba(245,158,11,.13);}
   .rt-green{color:#178a44;border-color:#22c55e;background:rgba(34,197,94,.13);}
-  .projtag{flex:none;align-self:center;display:inline-flex;align-items:center;gap:6px;white-space:nowrap;
+  .projtag{flex:none;align-self:center;display:inline-flex;align-items:center;justify-content:center;min-width:160px;gap:6px;white-space:nowrap;
     font-size:11px;font-weight:700;letter-spacing:.03em;padding:3px 11px;border-radius:100px;border:1px solid;margin-top:2px;}
   .projtag::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor;flex:none;}
   .pj-soce{color:#0b5a54;border-color:#0d9488;background:rgba(13,148,136,.10);}
@@ -664,15 +665,16 @@
       <p>Every node below is real and linked: the grammar lives on the matrix, the two systems are derived from it, and each research object carries a DOI. Hover a node; open it to read the record.</p>
     </div>
     <div class="sysgraph">
-    <svg viewBox="0 0 1000 330" fill="none" role="img" aria-label="Derivation graph: the grammar of the matrix derives SOCE and EMERGENZA; SOCE carries the codebook, the preregistration and the Founding Inscription preprint; EMERGENZA carries the endurance line; Contested Liberalisms sits with the ideology reading; the platform executes both.">
+    <svg viewBox="0 0 1000 330" fill="none" role="img" aria-label="Derivation graph: the grammar of the matrix derives SOCE and EMERGENZA, and directly carries the Founding Inscription — a SOCE antecedent, not an MSCA deliverable; SOCE carries the codebook, the preregistration and the Contested Liberalisms application; EMERGENZA carries the endurance line; the platform executes both systems.">
       <g stroke="var(--line)" stroke-width="2" stroke-linecap="round">
         <path class="edge" d="M120 165 C 220 165, 240 90, 340 90" stroke="var(--rule)"></path>
         <path class="edge" d="M120 165 C 220 165, 240 240, 340 240" stroke="var(--rule)"></path>
         <path class="edge" d="M340 90 C 460 90, 480 40, 600 40"></path>
         <path class="edge" d="M340 90 C 460 90, 480 90, 600 90"></path>
-        <path class="edge" d="M340 90 C 460 90, 480 140, 600 140"></path>
-        <path class="edge" d="M340 240 C 460 240, 480 200, 600 200"></path>
+        <path class="edge" d="M120 165 C 300 162, 440 140, 600 140"></path>
+        <path class="edge" d="M340 90 C 470 92, 500 196, 600 200"></path>
         <path class="edge" d="M340 240 C 460 240, 480 280, 600 280"></path>
+        <path class="edge" d="M340 90 C 500 96, 520 274, 600 280"></path>
       </g>
       <g font-family="Familjen Grotesk,Helvetica,Arial,sans-serif" font-size="13" fill="var(--ink)" font-weight="600">
         <a href="https://ontology360.it/matrix.html"><circle class="pin" cx="100" cy="165" r="22" fill="var(--rule)"></circle><text x="100" y="170" text-anchor="middle" fill="var(--bg)" font-size="11" font-weight="800">360</text><text x="100" y="210" text-anchor="middle">The grammar</text><text class="sm" x="100" y="226" text-anchor="middle" fill="var(--mut)" font-size="11" font-weight="400">matrix · ontology360.it</text></a>
@@ -795,7 +797,7 @@
       </a>
       <a class="pub road-diamond" href="https://doi.org/10.5281/zenodo.22022046" target="_blank" rel="noopener">
         <span class="badge">Dataset</span>
-        <span class="projtag pj-soce">SOCE</span>
+        <span class="projtag pj-soce">SOCE · application</span>
         <span><span class="t">Nationalism Cartography</span><br><span class="doi">Zenodo · CC BY 4.0 · doi:10.5281/zenodo.22022046</span></span>
         <span class="roadtag rt-diamond">Diamond road</span>
       </a>
@@ -825,7 +827,7 @@
       </a>
       <a class="pub road-green" href="https://ontology360.it/book.html" target="_blank" rel="noopener"><span class="badge">Draft</span>
         <span class="projtag pj-book">Book</span><span><span class="t">La Constitución en la era digital (book)</span><br><span class="doi">manuscript in draft, intended for Herder · Ópera Académica — not yet submitted · companion data at data.ontology360.it</span></span><span class="roadtag rt-green">Green road</span></a>
-      <div class="pub road-green"><span class="badge">Draft</span><span><span class="t">When Rights Outrun Reality</span><br><span class="doi">draft — not yet submitted · no DOI yet</span></span><span class="roadtag rt-green">Green road</span></div>
+      <div class="pub road-green"><span class="badge">Draft</span><span class="projtag pj-alone">Standalone</span><span><span class="t">When Rights Outrun Reality</span><br><span class="doi">draft — not yet submitted · no DOI yet</span></span><span class="roadtag rt-green">Green road</span></div>
     </div>
 
     <div class="sec-head" style="margin:44px 0 16px">
