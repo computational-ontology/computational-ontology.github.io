@@ -228,6 +228,7 @@
   .pj-app{color:#6d28d9;border-color:#8b5cf6;background:rgba(139,92,246,.10);}
   .pj-alone{color:#475569;border-color:#94a3b8;background:rgba(148,163,184,.14);}
   .pj-book{color:#9d174d;border-color:#ec4899;background:rgba(236,72,153,.10);}
+.pj-em{color:#1e40af;border-color:#2563eb;background:rgba(37,99,235,.10);}
   /* el bloque de titulo puede encoger y envolver: sin esto, las tarjetas con
      linea de metadatos larga saltan entero el titulo a una segunda fila */
   .pub>span:nth-child(3){flex:1 1 260px;min-width:0;}
@@ -240,7 +241,8 @@
   .pg-app .dot{background:#8b5cf6;}
   .pg-alone .dot{background:#94a3b8;}
   .pg-book .dot{background:#ec4899;}
-  @media(prefers-color-scheme:dark){.rt-diamond{color:#67e8f9;}.rt-gold{color:#fbbf24;}.rt-green{color:#6ee7a8;}.pj-soce{color:#5eead4;}.pj-app{color:#c4b5fd;}.pj-alone{color:#cbd5e1;}.pj-book{color:#f9a8d4;}}
+.pg-em .dot{background:#2563eb;}
+  @media(prefers-color-scheme:dark){.rt-diamond{color:#67e8f9;}.rt-gold{color:#fbbf24;}.rt-green{color:#6ee7a8;}.pj-soce{color:#5eead4;}.pj-app{color:#c4b5fd;}.pj-alone{color:#cbd5e1;}.pj-book{color:#f9a8d4;}.pj-em{color:#93c5fd;}}
 
   /* footer */
   footer{padding:40px 0 56px;color:var(--mut);font-size:13.5px;}
@@ -478,6 +480,17 @@
       "url": "https://doi.org/10.5281/zenodo.23387760",
       "identifier": "https://doi.org/10.5281/zenodo.23387760",
       "datePublished": "2026-10-15",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "isAccessibleForFree": true,
+      "author": { "@id": "https://orcid.org/0000-0002-4673-4486" },
+      "isPartOf": { "@id": "https://computational-ontology.com/#website" }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Better Ancestors: What Constitutions Owe the Unborn (preprint v1)",
+      "url": "https://doi.org/10.5281/zenodo.23562193",
+      "identifier": "https://doi.org/10.5281/zenodo.23562193",
+      "datePublished": "2026-10-22",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "isAccessibleForFree": true,
       "author": { "@id": "https://orcid.org/0000-0002-4673-4486" },
@@ -812,10 +825,10 @@
         <div class="rd">Green road</div>
         <h3>Self-archiving</h3>
         <p>A preprint or accepted version deposited in an open repository — Zenodo · OSF.</p>
-        <div class="on">On this road: the Founding Inscription preprint and accepted manuscript, the Ideological Signatures preprint, the preregistration, and in-process preprints.</div>
+        <div class="on">On this road: the Founding Inscription preprint and accepted manuscript, the Ideological Signatures preprint, the Better Ancestors preprint, the preregistration, and in-process preprints.</div>
       </div>
     </div>
-    <p class="roads-cap">Every research object below travels one of these three open-access roads. The left-hand tag names the project each object belongs to: <strong>SOCE</strong> — the exclusion-cycle system; <strong>Ontology360</strong> — the shared grammar; standalone work; or the book in progress.</p>
+    <p class="roads-cap">Every research object below travels one of these three open-access roads. The left-hand tag names the project each object belongs to: <strong>SOCE</strong> — the exclusion-cycle system; <strong>EMERGENZA</strong> — the endurance system; <strong>Ontology360</strong> — the shared grammar; standalone work; or the book in progress.</p>
 
     <div class="pubs">
       <div class="pubgroup pg-soce"><span class="dot"></span>SOCE — the exclusion-cycle system</div>
@@ -848,6 +861,13 @@
         <span class="badge">Preprint</span>
         <span class="projtag pj-soce">SOCE · ideology</span>
         <span><span class="t">Ideological Signatures — preprint v1</span><br><span class="doi">Zenodo · CC BY 4.0 · doi:10.5281/zenodo.23387760 · source, figures &amp; scripts: github.com/Luisbourguet/ideological-signatures</span></span>
+        <span class="roadtag rt-green">Green road</span>
+      </a>
+      <div class="pubgroup pg-em"><span class="dot"></span>EMERGENZA — the endurance system</div>
+      <a class="pub road-green" href="https://doi.org/10.5281/zenodo.23562193" target="_blank" rel="noopener">
+        <span class="badge">Preprint</span>
+        <span class="projtag pj-em">EMERGENZA</span>
+        <span><span class="t">Better Ancestors: What Constitutions Owe the Unborn — preprint v1</span><br><span class="doi">Zenodo · CC BY 4.0 · doi:10.5281/zenodo.23562193 · under double-anonymous review at a journal, venue withheld until decision · source &amp; script: github.com/Luisbourguet/better-ancestors</span></span>
         <span class="roadtag rt-green">Green road</span>
       </a>
       <div class="pubgroup pg-app"><span class="dot"></span>Ontology360 — the shared grammar</div>
@@ -919,7 +939,7 @@
     <span class="wbtag">White-box practice — no third-party code or trackers · anonymous, cookieless statistics on our own server</span>
   </div>
   <div class="wrap" style="margin-top:12px;font-size:13.5px;">Part of the Computational Ontology ecosystem · Hub: <a href="https://luisbourguet.com/">Luis Bourguet</a> (luisbourguet.com)</div>
-  <div class="wrap" style="margin-top:6px;"><span class="stamp">Updated 18 October 2026 · <a href="https://github.com/computational-ontology/computational-ontology.github.io/commits/main" target="_blank" rel="noopener">history</a></span></div>
+  <div class="wrap" style="margin-top:6px;"><span class="stamp">Updated 22 October 2026 · <a href="https://github.com/computational-ontology/computational-ontology.github.io/commits/main" target="_blank" rel="noopener">history</a></span></div>
 </footer>
 
 </body>
